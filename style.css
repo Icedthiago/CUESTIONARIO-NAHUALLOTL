@@ -1,27 +1,109 @@
-        body {
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #eee;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .pregunta {
-            margin-bottom: 30px;
-            padding: 15px;
-            background: #1e1e1e;
-            border-radius: 8px;
-        }
-        label {
-            display: block;
-            margin: 6px 0;
-            cursor: pointer;
-        }
-        button {
-            display: block;
-            margin: 40px auto;
-            padding: 12px 30px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+    color: #e6e6e6;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    text-shadow: 0 0 12px rgba(180, 120, 255, 0.25);
+}
+
+/* Contenedor de cada pregunta */
+.pregunta {
+    margin-bottom: 28px;
+    padding: 20px;
+    background: linear-gradient(180deg, #1e1e1e, #151515);
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pregunta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+}
+
+/* Texto de la pregunta */
+.pregunta p {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #d8cfff;
+}
+
+/* Opciones */
+label {
+    display: block;
+    margin: 8px 0;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+label:hover {
+    background: rgba(180, 120, 255, 0.08);
+    color: #ffffff;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    accent-color: #b478ff;
+    margin-right: 8px;
+}
+
+/* Botón */
+button {
+    display: block;
+    margin: 50px auto;
+    padding: 14px 36px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #7b3fe4, #b478ff);
+    box-shadow: 0 0 18px rgba(180, 120, 255, 0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 28px rgba(180, 120, 255, 0.7);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 50px;
+    padding: 25px;
+    background: linear-gradient(180deg, #1b1b1b, #121212);
+    border-radius: 14px;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+#resultado h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b478ff;
+    text-shadow: 0 0 10px rgba(180, 120, 255, 0.4);
+}
+
+#resultado p {
+    margin: 12px 0;
+    font-size: 15px;
+}

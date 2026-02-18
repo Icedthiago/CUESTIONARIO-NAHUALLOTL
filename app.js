@@ -23,7 +23,7 @@ formulario.addEventListener("submit", function (e) {
     // 🔥 Convertimos el conteo en array y lo ordenamos
     const ranking = Object.entries(conteo)
         .sort((a, b) => b[1] - a[1])
-        .slice(0, 3); // TOP 3
+        .slice(0, 5); // TOP 5
 
 const mensajes = {
     a: ` Metamorfosis  
